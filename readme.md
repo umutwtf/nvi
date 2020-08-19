@@ -1,1 +1,1 @@
-Soap Client Kullanmadan CURL bağlantısı ile basit bir doğrulama işlemi yapılmıştır.
+SoapClient Kullanmadan CURL bağlantısı ile basit bir doğrulama işlemi yapılmıştır.
