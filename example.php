@@ -7,7 +7,7 @@ function __autoload($className)
 
 $tcKontrol = new tcKimlikRequest('KIMLIKNO', 'AD', 'SOYAD', 'YIL');
 
-if ($tcKontrol->tcKimlikDogrula() == "true"):
+if ($tcKontrol->tcKimlikDogrula()):
     echo "Doğrulama Başarılı";
 else:
     echo "Doğrulama Başarısız";
