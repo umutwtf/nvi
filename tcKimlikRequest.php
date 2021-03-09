@@ -1,6 +1,6 @@
 <?php
 
-class tcKimlikRequest
+class NVI
 {
 
     protected $tcKimlikNo;
@@ -19,7 +19,7 @@ class tcKimlikRequest
     public function getFilter($str)
     {
         $str = strip_tags($str);
-        $str = mb_strtoupper($str);
+        $str = mb_strtoupper($str,"UTF-8");
         return $str;
     }
 
@@ -58,10 +58,4 @@ class tcKimlikRequest
         curl_close($ch);
         return strip_tags($dataRequestSoap);
     }
-
-    public function __destruct()
-    {
-        return true;
-    }
-
 }
