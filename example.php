@@ -5,7 +5,7 @@ function __autoload($className)
     require $className . '.php';
 }
 
-$tcKontrol = new tcKimlikRequest('KIMLIKNO', 'AD', 'SOYAD', 'YIL');
+$tcKontrol = new NVI('KIMLIKNO', 'AD', 'SOYAD', 'YIL');
 
 if ($tcKontrol->tcKimlikDogrula()):
     echo "Doğrulama Başarılı";
