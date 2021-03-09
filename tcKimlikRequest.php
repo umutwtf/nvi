@@ -5,14 +5,14 @@ class NVI
 
     protected $tcKimlikNo;
     protected $ad;
-    protected $soyAd;
+    protected $soyad;
     protected $dogumYili;
 
-    public function __construct($tcKimlikNo, $ad, $soyAd, $dogumYili)
+    public function __construct($tcKimlikNo, $ad, $soyad, $dogumYili)
     {
         $this->tcKimlikNo = $tcKimlikNo;
         $this->ad = $ad;
-        $this->soyAd = $soyAd;
+        $this->soyAd = $soyad;
         $this->dogumYili = $dogumYili;
     }
 
@@ -31,7 +31,7 @@ class NVI
       <TCKimlikNoDogrula xmlns="http://tckimlik.nvi.gov.tr/WS">
       <TCKimlikNo>' . $this->getFilter($this->tcKimlikNo) . '</TCKimlikNo>
       <Ad>' . $this->getFilter($this->ad) . '</Ad>
-      <Soyad>' . $this->getFilter($this->soyAd) . '</Soyad>
+      <Soyad>' . $this->getFilter($this->soyad) . '</Soyad>
       <DogumYili>' . $this->getFilter($this->dogumYili) . '</DogumYili>
       </TCKimlikNoDogrula>
       </soap:Body>
